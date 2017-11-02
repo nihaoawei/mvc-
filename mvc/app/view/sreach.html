@@ -1,0 +1,26 @@
+{include header.html}
+
+<div class="center2">
+			<div class="center2_top">
+				<p class="zi">结果:找到“<span>{$keys}</span>”相关内容<span>{$sum}</span>个</p>
+				{if empty($sreach)}
+				<p>对不起，没有找到匹配结果</p>
+				{else}
+				{foreach $sreach as $key=>$val}
+				<br />
+				<div class="content1">
+					<a  style="font-size: 15px;font-weight: bold;" href="index.php?m=details&a=details&yid={$val['yid']}"><b>{$val['title']}</b></a>
+					<br />
+					<br/>
+					{$val['content']}
+				</div>
+				{/foreach}
+				{/if}
+			</div>
+		</div>
+
+
+<div class="clear"></div>
+
+<div class="clear"></div>
+{include wei.html}

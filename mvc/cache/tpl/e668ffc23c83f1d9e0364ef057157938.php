@@ -1,0 +1,120 @@
+<?php include "cache/tpl/57864b256b9cbcc447ad6e28b7a55608.php" ;?>
+		<div class="hr grid_12 clearfix"></div>
+
+
+		<!-- =heading_page -->
+		<aside>
+			<h2 class="grid_12 heading_page clearfix"><span>HI</span>  If you are not brave enough, no one will back you up.</h2>
+		</aside>
+
+		<div class="hr grid_12 clearfix"></div>
+
+		<!-- Left Column -->
+		<section id="left_col" class="grid_8">
+		
+			<div class="breadcrumbs"><a href="index.html">主页</a> / 自我介绍</div>
+			
+			<figure>
+				<img style="width:300px;" src="public/images/gudian.jpeg" alt="" />
+			</figure>
+			
+			<div class="hr dotted clearfix"></div>
+
+			<header>
+				<p style="font-size: 15px;font-weight: bold;" class="page_title">自我介绍</p>
+			</header>
+
+			<p><b>
+				生而几载匆匆过，方醒倏忽弱冠年。<br/>
+				谁人在处望风烟，芸芸众生吾自潜。<br/>
+				一生半世几千日，浮花绿柳藏胭脂。<br/>
+				红尘碌碌残心志，如何当得逍遥时。<br/>
+				</b></p> 
+
+			<header>
+				<p style="font-size: 15px;font-weight: bold;" class="page_title">星座运势</p>
+			</header>
+			<p><b>
+				<form action="index.php?m=set&a=zwjs#brith" method="post" id="brith">
+				
+				<select name="xing" style="width:300px;height:30px">
+				<?php foreach($result3 as $key=>$val) :?>
+					<option value="<?=$val['astroid'];?>">日期：<?=$val['date'];?></option>
+				<?php endforeach;?>
+				</select><br/><br/>
+				输入你的生日试试：(格式:xxxx-xx-xx)<br />
+				<input style="width:300px;height:30px" type="text" name="brith" value="" /><br />
+				<input style="width:100px;height:30px" type="submit" value ="试 试">
+				</form>
+				<br/>
+				<br/>
+				<br/>
+				<br/>
+				<?php if(!empty($pic)): ?><img src="<?=$pic;?>" /><?php endif;?>
+				<?php if(!empty($today)): ?>
+					
+					<br/>
+					<b style="font-size:18px;font-weight: bold;"><?=$xingzuo['astroname'];?>今日运势：</b>
+					<?=$today['date'];?>
+					<br/>
+					
+					<?php if(!empty($today['presummary'])): ?><?=$today['presummary'];?><br/><?php endif;?>
+					<b style="font-size:15px;font-weight: bold;">
+					契合星座</b><?=$today['star'];?> 快去讨好他哦<br />
+					<b style="font-size:15px;font-weight: bold;">
+					幸运色</b><?=$today['color'];?><br/>
+					<b style="font-size:15px;font-weight: bold;">
+					幸运数字：</b><?=$today['number'];?><br /><br /><br />
+					
+					<b style="font-size:18px;font-weight: bold;">
+					本月运势：</b>
+					<?php if(!empty($month['date'])): ?><?=$month['date'];?><br/><?php endif;?>
+					
+					<?php if(!empty($month['summary'])): ?><?=$month['summary'];?><br/><?php endif;?>
+					<?php if(!empty($month['love'])): ?> 
+					<b style="font-size:15px;font-weight: bold;">本月爱情：</b><?=$month['love'];?><br />
+					<?php endif;?>
+					<?php if(!empty($month['career'])): ?>
+					<b style="font-size:15px;font-weight: bold;">工作状态：</b><?=$month['career'];?><br/><?php endif;?>
+					<?php if(!empty($month['health'])): ?>
+					<b style="font-size:15px;font-weight: bold;">本月健康情况：</b><?=$month['health'];?><br/><?php endif;?>
+					<?php if(!empty($month['money'])): ?>
+					<b style="font-size:15px;font-weight: bold;">钱财运势：</b><?=$month['money'];?><br /><?php endif;?><br /><br />
+										
+				<?php endif;?>
+				
+				
+				</b></p> 
+			<div class="hr dotted clearfix"></div>
+			
+			<header>
+				<p style="font-size: 15px;font-weight: bold;" class="page_title">今日天气</p>
+				
+			</header>
+			<b style="font-size:15px;font-weight: bold;">
+					<?=$tianqi['city'];?></b><?=$tianqi['date'];?> <?=$tianqi['week'];?> <?=$tianqi['weather'];?><br />
+			
+			<b style="font-size:15px;font-weight: bold;">
+					温度</b><?=$tianqi['templow'];?> ~ <?=$tianqi['temphigh'];?>   <?=$tianqi['winddirect'];?><br />
+			
+			<b style="font-size:15px;font-weight: bold;">
+					风力</b><?=$tianqi['windpower'];?> 更新时间：<?=$tianqi['updatetime'];?><br />
+			<b style="font-size:15px;font-weight: bold;">
+					指数：</b><?php foreach($tianqi['index'] as $key=>$index) :?>
+			
+			    <?=$index['iname'];?> <?=$index['ivalue'];?> <?=$index['detail'];?>
+			
+			<?php endforeach;?>
+			<br />
+			
+			
+			<div class="hr dotted clearfix"></div>
+			<a style="font-size:15px;font-weight:bold;" href="bbs/">欢迎访问我的bbs论坛项目有错误可以反馈给我哟</a>
+			
+			
+		</section><!-- left col -->
+	
+		<div class="hr grid_12 clearfix"></div>
+		
+	</div><!-- #container -->
+	<?php include "cache/tpl/721c824130dd8e3b46b71535bd749bbb.php" ;?>

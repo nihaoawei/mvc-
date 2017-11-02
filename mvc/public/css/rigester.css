@@ -1,0 +1,61 @@
+			*{
+				margin:0;
+				padding:0;
+				font-size:12px;
+			}
+			.rige{
+				width:960px;
+				height:375px;
+				margin:0 auto;
+				margin-top:10px;
+				float:left;
+			}
+			.rige .rihead{
+				height:30px;
+				background:#F2F2F2;
+			}
+			.rige p{
+				font-size:14px;
+				font-weight:bold;
+				line-height:30px;
+			}
+			.rige .riform form{
+				float:left;
+				margin-top:30px;
+				margin-left:200px;
+			}
+			.rige .riform form i{
+				display:inline-block;
+				width:70px;
+				text-align:right;
+				padding:10px 0 ;
+			}
+			.rige .riform form input{
+				margin-bottom:10px;
+				margin-left:10px;
+				width:230px;
+				height:23px;
+				border-top:2px solid #d4d4d4;
+				border-left:1px solid #848484;
+				border-bottom:1px solid #e0e0e0;
+				border-right:1px solid #e0e0e0;
+			}
+			
+			.rige .riform form .yan{
+				width:60px;
+				height:25px;
+			}
+			.rige .riform form i span{
+				color:red;
+				
+			}
+			.rige .riform form .btn{
+				margin-left:80px;
+				width:45px;
+				height:25px;
+				color:#fff;
+				background:#296bbb;
+				border:1px solid #235994;
+				padding:0;
+			}
+			
